@@ -1,0 +1,63 @@
+/* Apply a shadow and round edges to images */
+.image-container {
+  margin-top: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align from left to right */
+}
+
+.image-container .image {
+  flex: 0 0 calc(25% - 10px); /* 20% width with 10px margin between images */
+  margin: 5px; /* Adjust the margin for spacing */
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Rest of your previous CSS styles */
+
+
+/* Rest of your previous CSS styles */
+
+
+  /* Style the file input */
+.file-input {
+    display: none;
+  }
+  
+  .upload-button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .upload-button:hover {
+    background-color: #0056b3; /* Hover color */
+  }
+  
+
+  /* Style the image upload container */
+.image-upload-container {
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+}
+
+
+/* Style rows with spacing */
+.row {
+  margin-bottom: 20px; /* Add spacing between rows */
+}
+
+

@@ -1,0 +1,22 @@
+<div class="search-container">
+  <input type="text" name="search" [(ngModel)]="searchParam" (ngModelChange)="searchByName()" placeholder="🔍 Traži po nazivu vrste ili porodice" class="full-width-search-bar">
+</div>
+
+
+<mat-grid-list cols="4" gutterSize="10px">
+
+    <mat-grid-tile *ngFor="let bird of birdsToShow" (click)="goToBirdInfo(bird)">
+      <mat-card (click)="goToBirdInfo(bird)">
+
+        <mat-card-content>
+          <img [src]="'../../assets/bird-images/' + getPictureName(bird) + '.jpg'" alt="Bird" width="80%">
+        </mat-card-content>     
+        <mat-card-actions>
+          {{ bird.naziv }} <!-- Display the text directly without a button -->
+      </mat-card-actions>
+      
+      </mat-card>
+       
+    </mat-grid-tile>
+  </mat-grid-list>
+  

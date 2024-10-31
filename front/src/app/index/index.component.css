@@ -1,0 +1,168 @@
+/* Container Styles */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff; /* White background */
+  padding: 20px; /* Add padding */
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollable Cards Styles */
+.scrollable-cards {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px; /* Add padding */
+}
+
+/* Card Styles */
+mat-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 200px; /* Adjust card width as needed */
+  background-color: #b7b4b4; /* Light gray background for cards */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
+  border: none; /* Remove the card border */
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px; /* Add padding */
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  background-blend-mode: overlay, normal;
+}
+
+/* Hover Effect on Cards */
+mat-card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.8);
+}
+.card-description {
+  font-size: 14px; /* Adjust font size as needed */
+  font-weight: 500;
+  margin: 0; /* Remove default margins */
+  padding: 10px 0; /* Add padding as needed */
+  width: 100%;
+}
+.card-description-container {
+  background-color: #b1e0b1; /* Green background color */
+  padding: 0px; /* Add padding as needed */
+  border-radius: 7px; /* Rounded corners only at the bottom */
+  text-align: center; /* Center the text horizontally */
+  width: 100%; /* Span the full width of the parent mat-card */
+  color: #333; /* Text color */
+}
+.mat-card-content {
+  flex: 1; /* Make the image take up available space */
+}
+
+.mat-card-content img {
+  width: 100%;
+  max-height: 150px; /* Adjust as needed */
+  object-fit: cover;
+  border-radius: 6px;
+  align-items: flex-end;
+}
+
+.mat-card-actions {
+  text-align: center;
+  width: 100%;
+  border-radius: 12px; 
+ 
+}
+
+/* Arrow Button Styles */
+.arrow-button {
+  width: 40px;
+  height: 40px;
+  background-color: #4CAF50; /* Green background color */
+  color: white;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* Left Arrow Styles */
+.left-arrow {
+  transform: rotate(180deg);
+}
+
+/* Hide Scrollbar */
+.scrollable-cards::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Style for the selected card */
+/* Style for the selected card */
+.selected-card {
+  background-color: #688d69; /* Green background color for selected cards */
+  border: 2px solid #45A049; /* Slightly darker green border color */
+  box-shadow: 0px 0px 10px rgba(76, 175, 80, 0.5); /* Add shadow on selection */
+  color: white; /* Text color for selected cards */
+  transform: scale(1.05); /* Slightly scale up the selected card */
+
+}
+
+
+/* Style for the "Pretraži ptice" button */
+button {
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* Text color */
+  border: none; /* Remove the border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding around the text */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor on hover */
+  transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+  
+}
+
+/* Hover effect for the button */
+button:hover {
+  background-color: #45A049; /* Slightly darker green on hover */
+  background-image: linear-gradient(#45A049, #45A049); /* Darker green on hover */
+  
+
+}
+
+
+body {
+  background-color: #f0f0f0; /* Light gray background for the entire page */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+/* Style for <h2> headings */
+h2 {
+  font-size: 18px; /* Adjust the font size */
+  color: #333; /* Text color */
+  margin-top: 20px; /* Add some top margin for spacing */
+  text-align: center; /* Center the text horizontally */
+}
+/* Apply a global scale to make everything smaller */
+
+
+.search-button {
+  width: 100%;
+  background-color: #4CAF50; /* Button background color */
+  color: #fff; /* Text color */
+  font-size: 18px; /* Font size */
+  padding: 10px; /* Padding around the text */
+  border: none; /* Remove button border */
+  cursor: pointer; /* Show pointer cursor on hover */
+  border-radius: 0; /* Remove any border-radius */
+}
+
+/* Hover effect */
+.search-button:hover {
+  background-color: #45A536; /* Change background color on hover */
+}

@@ -1,0 +1,33 @@
+<button mat-button class="volume" [matMenuTriggerFor]="menu">
+  <mat-icon>volume_up</mat-icon>
+</button>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item *ngFor="let sound of sounds" (click)="playSound(sound[1])">
+    {{ sound[0] }}
+  </button>
+</mat-menu>
+
+<button mat-button class="pause-button" (click)="pauseAudio()">
+  <mat-icon>pause</mat-icon>
+</button>
+
+<a [href]="video" target="_blank" *ngIf="video">
+  <button mat-button class="video-button">
+    <mat-icon>movie</mat-icon>
+  </button>
+</a>
+
+
+<a  *ngIf="!video">
+  <button mat-button class="no-video-button">
+    <mat-icon>movie</mat-icon>
+  </button>
+</a>
+
+
+
+
+
+
+

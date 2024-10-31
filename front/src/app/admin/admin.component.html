@@ -1,0 +1,42 @@
+
+<div class="container">
+    <h2>Zahtevi</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Ptica</th>
+        </tr>
+      </thead>
+      <tbody class="text">
+        <tr *ngFor="let bird of birdImages">
+
+
+            <table class="table table-bordered">
+                <tr class="table-row">
+                    <th >{{bird.naziv}}</th>
+
+                                    
+            <tr  *ngFor="let image of bird.slike">
+                <td>
+                    <div class="image-container">
+                        <img class="image-container" [src]="'http://127.0.0.1:4000/uploads/' + image" alt="Bird Image">
+                    </div>
+                </td>
+              
+                <td>
+                    <button class="accept-button" (click)="acceptImage(image, bird)">Prihvati</button>
+                    <button class="reject-button" (click)="deleteImage(image, bird)">Obriši</button>
+                </td>
+                  
+
+
+            </tr>
+            
+
+        </table>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

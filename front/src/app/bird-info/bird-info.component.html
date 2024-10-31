@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+</head>
+
+<body>
+    
+    
+    <div class="image-and-description ">    
+
+        <div class="row body-row">
+
+            <div class="row row col-md-5">
+
+            <div class="image-container ">
+                <img [src]="'../../assets/bird-images/' + getImage() + '.jpg'" alt="Bird" class="img-fluid rounded-image" width="600" height="500">
+
+                <div class="button-container">
+                    <button class="prev btn btn-primary" (click)="prevSlide()" *ngIf="birdImages.length > 1">&#10094;</button>
+                    <button class="next btn btn-primary" (click)="nextSlide()" *ngIf="birdImages.length > 1">&#10095;</button>
+                </div>
+
+                <section class="bird-info">
+                    <p><strong>Vrsta:</strong> {{bird.naziv}} ({{bird.latinski_naziv}})</p>
+                    <p><strong>Porodica:</strong> {{bird.porodica}}</p>
+                    <p *ngIf="bird.drugi_naziv"><strong>Drugi naziv:</strong> {{bird.drugi_naziv}}</p>
+                    <p><strong>Engleski naziv:</strong> {{bird.engleski_naziv}}</p>
+                </section>
+
+            </div>
+
+            
+
+
+            </div>
+        
+        
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="bird-description">
+                        <h2>Opis</h2>
+                        <p>{{bird.opis}}</p>
+                    </div>
+                </div>
+                   
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="icon text-center">
+                            <img src="../../assets/icons/velicina.png" alt="Icon 1" width="100">
+                            <p class="description">{{bird.duzina_tela}} cm</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon text-center">
+                            <img src="../../assets/icons/raspon.png" alt="Icon 2" width="100" >
+                            <p class="description">{{bird.raspon_krila}} cm</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon text-center">
+                            <img src="../../assets/icons/tezina.png" alt="Icon 3" width="100">
+                            <p class="description">{{bird.tezina}} g</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="row">
+                    <div class="icon1 col-md-6">
+                      <img src="../../assets/icons/hrana.png" alt="Icon 4" width="100" class="rounded-image">
+                      <div class="description">
+                        <p>Glavna hrana ove ptice su:</p>
+                        <p>{{ bird.ishrana }}</p>
+                      </div>
+                    </div>
+                    <div class="icon1 col-md-6">
+                      <img src="../../assets/icons/gnezdo.png" alt="Icon 5" width="100">
+                      <div class="description">
+                        <p>{{ bird.gnezdenje }}</p>
+                        <p>{{ bird.prisutnost }}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row sounds">
+        
+                    <div class="col-md-4">
+                        <app-sound-menu [sounds]="sounds" [video]="videoLink"></app-sound-menu>
+                    </div>
+                    <div class="col-md-5"> <!-- Adjust the column width as needed -->
+                        <!-- Empty column to push the button to the right -->
+                    </div>
+                    <div class="col-md-3">
+                        <button class="gallery-button" (click)="goToGallery()">Idi na galeriju</button>
+                    </div>
+                </div>
+                  
+        
+            </div>
+        </div>
+        
+    </div>
+
+
+    
+
+   
+
+
+
+
+    
+
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+
+<div class="image-upload-container">
+  <app-image-upload [bird]="bird.naziv"></app-image-upload>
+</div>
+
+<div class="image-container">
+  <div class="image" *ngFor="let image of birdImages.accepted">
+    <img [src]="'http://127.0.0.1:4000/uploads/' + image" alt="Bird Image">
+  </div>
+</div>

@@ -1,0 +1,73 @@
+/* Style for the volume button with hover effect */
+button.mat-button,
+button.mat-button.video {
+    background-color: #9d4e89; /* Set button background color */
+    color: #fff; /* Set text color */
+    padding: 10px 20px; /* Add padding to the button */
+    border-radius: 5px; /* Add rounded corners to the button */
+    margin-right: 10px; /* Add margin to the right of the button */
+    text-decoration: none; /* Remove underlines from links */
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
+
+}
+
+/* Style for the pause button with hover effect */
+button.pause-button {
+    background-color: #e7c53c; /* Set button background color */
+    color: #fff; /* Set text color */
+    padding: 10px 20px; /* Add padding to the button */
+    border-radius: 5px; /* Add rounded corners to the button */
+    margin-right: 10px; /* Add margin to the right of the button */
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
+
+}
+
+/* Style for the menu items with hover effect */
+button.mat-menu-item:hover {
+    background-color: #a3eba5; /* Change background color on hover */
+    color: #fff; /* Set text color on hover */
+}
+
+
+button.video-button {
+    background-color: #4CAF50; /* Set button background color */
+    color: #fff; /* Set text color */
+    padding: 10px 20px; /* Add padding to the button */
+    border-radius: 5px; /* Add rounded corners to the button */
+    margin-right: 10px; /* Add margin to the right of the button */
+}
+
+button.no-video-button {
+    background-color: #a9ebab; /* Set button background color */
+    color: #fff; /* Set text color */
+    padding: 10px 20px; /* Add padding to the button */
+    border-radius: 5px; /* Add rounded corners to the button */
+    margin-right: 10px; /* Add margin to the right of the button */
+}
+
+button.pause-button:hover {
+    background-color: #d0ac2c; /* Change background color on hover */
+    color: #fff; /* Set text color on hover */
+}
+
+button.video-button:hover {
+    background-color: #45a536; /* Change background color on hover */
+    color: #fff; /* Set text color on hover */
+}
+
+/* Style for the volume button with hover effect */
+button.volume {
+    background-color: #9d4e89; /* Set button background color */
+    color: #fff; /* Set text color */
+    padding: 10px 20px; /* Add padding to the button */
+    border-radius: 5px; /* Add rounded corners to the button */
+    margin-right: 10px; /* Add margin to the right of the button */
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
+  }
+  
+  /* Hover effect for the volume button */
+  button.volume:hover {
+    background-color: #752a59; /* Change background color on hover */
+    color: #fff; /* Set text color on hover */
+  }
+  

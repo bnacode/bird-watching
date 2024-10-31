@@ -1,0 +1,54 @@
+
+<body>
+<button class="search-button" (click)="searchBirds()">Pretraži ptice</button>
+
+<h2 class="section-heading">Odaberi oblik</h2>
+
+<div class="carousel-container">
+    <button (click)="scrollLeftType()" class="arrow-button left-arrow"><mat-icon>keyboard_arrow_right</mat-icon></button>
+    <div class="scrollable-cards" #scrollableCardsType>
+      <mat-card *ngFor="let searchParam of birdTypes" (click)="selectType(searchParam)"
+        [ngClass]="{ 'selected-card': searchParam === selectedType }">
+        <mat-card-content>
+          <img class="uniform-image" [src]="'../../assets/icons/' + getTypeIcon(searchParam)" alt="Bird" width="80%">
+        </mat-card-content>
+        <mat-card-actions>
+          <div class="card-description-container">
+            <p mat-button class="card-description">{{ searchParam }}</p>
+          </div>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <button (click)="scrollRightType()" class="arrow-button right-arrow"><mat-icon>keyboard_arrow_right</mat-icon></button>
+  </div>
+
+
+  <h2 class="section-heading">Odaberi stanište</h2>
+
+<div class="carousel-container">
+    <button (click)="scrollLeftArea()" class="arrow-button left-arrow"><mat-icon>keyboard_arrow_right</mat-icon></button>
+    <div class="scrollable-cards" #scrollableCardsArea>
+      <mat-card *ngFor="let searchParam of birdArea" (click)="selectArea(searchParam)"
+      [ngClass]="{ 'selected-card': searchParam === selectedArea }">
+        <mat-card-content>
+          <img [src]="'../../assets/icons/' + getAreaIcon(searchParam)" alt="Bird" width="80%">
+        </mat-card-content>
+        <mat-card-actions>
+          <div class="card-description-container">
+            <p class="card-description">{{ searchParam }}</p>
+          </div>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <button (click)="scrollRightArea()" class="arrow-button right-arrow"><mat-icon>keyboard_arrow_right</mat-icon></button>
+  </div>
+  
+  <h2>Odaberi boje</h2>
+  
+
+<!-- app.component.html -->
+<app-color-palette (colorsSelected)="handleColorsSelected($event)"></app-color-palette>
+
+</body>
+
+  

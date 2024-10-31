@@ -1,0 +1,63 @@
+/* Add this CSS to your component's stylesheet or in a separate CSS file */
+
+/* Define a CSS class for the images */
+.image-container img {
+    width: 200px; /* Set your desired width */
+    height: 200px; /* Set your desired height */
+    object-fit: cover; /* You can use 'cover', 'contain', or other values to control how the image fits the container */
+  }
+  
+
+  /* Add this CSS to your component's stylesheet or in a separate CSS file */
+
+/* Add this CSS to your component's stylesheet or in a separate CSS file */
+
+/* Style the buttons */
+button {
+    background-color: #007bff; /* Set your desired button background color */
+    color: #fff; /* Set the text color for the buttons */
+    padding: 5px 10px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth hover effect */
+    
+  }
+  
+  /* Style the buttons on hover */
+  button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
+  
+  /* Align buttons to the right */
+  td button {
+    float: right;
+  }
+  
+  .text-right {
+    text-align: right;
+}
+
+.table-row{
+  width : 100%;
+}
+/* Set a fixed width for all cells in the table */
+.table-bordered td {
+  width: 200px; /* Adjust the width to your desired value */
+  white-space: nowrap; /* Prevent content from wrapping */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis; /* Show ellipsis (...) for overflowing content */
+}
+
+.accept-button,
+.reject-button {
+  width: 100px;
+  height: 30px;
+    width: 100px;
+    height: 30px;
+    background-color: green;
+    color: white; /* Set text color to white for better visibility */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Add a pointer cursor for better usability */
+}

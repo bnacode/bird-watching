@@ -1,0 +1,38 @@
+/* Style the file input label */
+.custom-file-input-label {
+  background-color: #00ff73; /* Button background color */
+  color: #fff; /* Text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px; /* Add some spacing between the label and input */
+}
+
+/* Style the file input itself (hidden) */
+#images {
+  display: none;
+}
+
+/* Style the upload button */
+.upload-button {
+  background-color: #2c5d11;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect for the upload button */
+.upload-button:hover {
+  background-color: #82dba5;
+}
+
+/* Style the container where selected file names are displayed */
+#file-selected-text {
+  font-weight: bold; /* Make the text bold (optional) */
+  margin-left: 10px; /* Add some spacing between the label and file names */
+  color: #333; /* Text color for selected file names (optional) */
+}
